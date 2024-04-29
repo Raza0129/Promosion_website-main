@@ -1,24 +1,24 @@
 <?php
-//     include './dbConfig.php';
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
-//   $fname = $_POST["fname"];
-//   $lname = $_POST["lname"];
-//   $phone = $_POST["phone"];
-//   $email = $_POST["email"];
-//   $message = $_POST["message"];
+    include './dbConfig.php';
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $fname = $_POST["fname"];
+  $lname = $_POST["lname"];
+  $phone = $_POST["phone"];
+  $email = $_POST["email"];
+  $message = $_POST["message"];
 
-//   $sql = "INSERT INTO `dubai_website`(`first_name`, `last_name`, `phone_number`, `email`, `textarea`) VALUES ('$fname','$lname',$phone,'$email','$message')";
+  $sql = "INSERT INTO `dubai_website`(`first_name`, `last_name`, `phone_number`, `email`, `textarea`) VALUES ('$fname','$lname',$phone,'$email','$message')";
 
-//   $okay = mysqli_query($conn,$sql);
+  $okay = mysqli_query($conn,$sql);
   
 
-//   if($okay){
-//   echo "Records inserted successfully.";
+  if($okay){
+  echo "Records inserted successfully.";
 
-// } else {
-//             echo "ERROR: Could not execute query: $sql. " . $conn->error;
-//         }
-// }
+} else {
+            echo "ERROR: Could not execute query: $sql. " . $conn->error;
+        }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
